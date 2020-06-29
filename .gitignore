@@ -1,0 +1,10 @@
+*.png
+*.jpg
+*.mov
+*.mp4
+*.gif
+bin
+obj
+Slack
+Messenger
+NormalizedData

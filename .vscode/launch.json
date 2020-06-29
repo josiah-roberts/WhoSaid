@@ -1,0 +1,53 @@
+{
+  // Use IntelliSense to find out which attributes exist for C# debugging
+  // Use hover for the description of the existing attributes
+  // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ChatOracle",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-chatoracle",
+      // If you have changed target frameworks, make sure to update the program path.
+      "program": "${workspaceFolder}/ChatOracle/bin/Debug/netcoreapp3.1/ChatOracle.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/ChatOracle",
+      // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Preprocessor",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-preprocessor",
+      // If you have changed target frameworks, make sure to update the program path.
+      "program": "${workspaceFolder}/Preprocessor/bin/Debug/netcoreapp3.1/Preprocessor.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Preprocessor",
+      // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Sample",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-preprocessor",
+      // If you have changed target frameworks, make sure to update the program path.
+      "program": "${workspaceFolder}/SampleClassification/SampleClassification.ConsoleApp/bin/Debug/netcoreapp3.1/SampleClassification.ConsoleApp.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/SampleClassification/SampleClassification.ConsoleApp",
+      // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+      "console": "internalConsole",
+      "stopAtEntry": false
+    },
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": "${command:pickProcess}"
+    }
+  ]
+}
